@@ -12,7 +12,7 @@ namespace UoWStudy.Infrastructure.ServiceExtension;
             services.AddDbContext<DbContextClass>(options =>
                 options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IProductRepository, IProductRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
 
             return services;
         }
