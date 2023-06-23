@@ -2,7 +2,7 @@
 using UoWStudy.Core.Models;
 using UoWStudy.Services.Interfaces;
 namespace UoWStudy.Controllers {
-    [Route("api/[controller")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase {
         //we inject the product Service to the controller. O.O so many injections
