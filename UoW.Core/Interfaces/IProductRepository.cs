@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UoWStudy.Core.Models;
+﻿using UoWStudy.Core.Models;
 
-namespace UoWStudy.Core.Interfaces {
+namespace UoWStudy.Core.Interfaces;
     public interface IProductRepository : IGenericRepository<Product> {
 
         // the product repository will now inherit IGenericRepo where T will be Product it's like :
@@ -16,4 +11,3 @@ namespace UoWStudy.Core.Interfaces {
         //Task Delete(int id);
         // being written here
     }
-}

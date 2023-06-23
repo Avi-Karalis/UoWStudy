@@ -1,15 +1,7 @@
-﻿using Humanizer;
-using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
-using UoWStudy.Core.Interfaces;
+﻿using UoWStudy.Core.Interfaces;
 using UoWStudy.Core.Models;
 
-namespace UoWStudy.Infrastructure.Repositories {
+namespace UoWStudy.Infrastructure.Repositories;
     public class ProductRepository : GenericRepository<Product>, IProductRepository {
         public ProductRepository(DbContextClass db) : base(db) {
             //In C#, when you create a derived class from a base class, the derived class constructor can call the
@@ -29,4 +21,3 @@ namespace UoWStudy.Infrastructure.Repositories {
         }
 
     }
-}

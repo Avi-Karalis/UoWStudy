@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UoWStudy.Core.Interfaces {
+﻿namespace UoWStudy.Core.Interfaces;
     public interface IGenericRepository<T> where T: class {
         // give basic functions to be inherited
         Task<T> GetById(int id);
@@ -13,4 +7,4 @@ namespace UoWStudy.Core.Interfaces {
         void Delete(T entity);
         void Update(T entity);
     }
-}
+
